@@ -88,6 +88,16 @@ The classes are defined in the format {screen size}-{percentage} where percentag
   .dish-img {
     width: 100%;
   }
+  .booking-btn a {
+  background-color: var(--color-first);
+  border-radius: 0 100vh 100vh;
+  padding: 5px 15px;
+  transition: all 0.4s ease-in-out;
+  font-size: 12px;
+  color: var(--color-light);
+  font-weight: 400;
+  font-family: var(--font-default);
+}
   .chef-card-container {
     display: flex;
     flex-direction: column;
