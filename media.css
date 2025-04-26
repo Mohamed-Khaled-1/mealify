@@ -1,0 +1,410 @@
+/* Responsive media queries for different screen sizes based on tailwind break points  */
+
+/* This file contains media queries for different screen sizes
+The classes defined here can be used to set the width of elements based on the screen size
+The classes are prefixed with the screen size (xs, sm, md, lg, xl, xxl)  
+The classes are defined in the format {screen size}-{percentage} where percentage is the width of the element as a percentage of the parent element */
+
+/* start of media query */
+/*  extra extra smal xxs */
+@media screen and (width<=320px) {
+  .nav-bar {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .mobile-head-bar {
+    opacity: 1;
+    visibility: visible;
+   
+  }
+  .mobile-head-bar .nav-name a h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  #home.booking-section {
+    display: flex;
+    padding: var(--padding);
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+  }
+  .booking-section .booking-text {
+    width: 100%;
+  }
+  .dish-img {
+    width: 100%;
+    filter: drop-shadow(4px 4px 9px #000a);
+  }
+  .chef-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: var(--padding);
+  }
+  .card-img::after {
+    bottom: 25%;
+  }
+  .gallery-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+/* Extra small xs */
+@media screen and (320px <= width < 640px) {
+  .nav-bar {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .mobile-head-bar {
+    opacity: 1;
+    visibility: visible;
+
+  }
+  .mobile-head-bar .nav-name a h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  #home.booking-section {
+    display: flex;
+    padding: var(--padding);
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+  }
+  .booking-section .booking-text {
+    width: 100%;
+  }
+
+  .dish-img {
+    width: 100%;
+  }
+  .chef-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: var(--padding);
+  }
+  .card-img::before {
+    bottom: -5%;
+  }
+  .gallery-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  form .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  form .button {
+    width: 40%;
+  }
+  .footer {
+    background-image: linear-gradient(#0009, #0009),
+      url(./images/textured-metal-background.jpg);
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-about,
+  .footer-subscription,
+  .footer-contact {
+    width: 100%;
+  }
+  .sunscription-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .footer-subscription .sunscription-group input {
+    width: 100%;
+  }
+  .footer-subscription .sunscription-group button {
+    width: 100%;
+  }
+}
+
+/* end of extra small xs */
+
+/* Small sm */
+@media screen and (640px <= width <768px) {
+  .nav-bar {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .mobile-head-bar {
+    opacity: 1;
+    visibility: visible;
+
+  }
+  .mobile-head-bar .nav-name a h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  #home.booking-section {
+    display: flex;
+    padding: var(--padding);
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+  }
+  .booking-section .booking-text {
+    width: 100%;
+  }
+  .dish-img {
+    width: 100%;
+    filter: drop-shadow(4px 4px 9px #000a);
+  }
+  .chef-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: var(--padding);
+  }
+  .card-img::before {
+    bottom: -2%;
+  }
+
+  .gallery-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  form .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  form .button {
+    width: 40%;
+  }
+  .footer {
+    background-image: linear-gradient(#0009, #0009),
+      url(./images/textured-metal-background.jpg);
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-about,
+  .footer-subscription,
+  .footer-contact {
+    width: 100%;
+  }
+  .sunscription-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .footer-subscription .sunscription-group input {
+    width: 100%;
+  }
+  .footer-subscription .sunscription-group button {
+    width: 100%;
+  }
+}
+
+/* end of small sm */
+
+/* Medium md */
+@media screen and (768px <= width < 1024px) {
+  nav-bar {
+    opacity: 0;
+  }
+  .mobile-head-bar {
+    opacity: 1;
+  }
+  .mobile-head-bar .nav-name a h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  #home.booking-section {
+    display: flex;
+    padding: var(--padding);
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+  }
+  .booking-section .booking-text {
+    width: 100%;
+  }
+  .booking-btns {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .dish-img {
+    width: 80%;
+    filter: drop-shadow(4px 4px 9px #000a);
+  }
+  .chef-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+    padding: var(--padding);
+  }
+  .chef-card {
+    width: 48%;
+  }
+  .card-img::before {
+    bottom: -3%;
+  }
+
+  .gallery-card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    gap: 20px 20px;
+    grid-auto-flow: row;
+  }
+
+  .img-1 {
+    grid-area: 2 / 1 / 5 / 7;
+  }
+
+  .img-5 {
+    grid-area: 5 / 1 / 8 / 7;
+  }
+
+  .img-2 {
+    grid-area: 8 / 1 / 15 / 7;
+  }
+
+  .img-4 {
+    grid-area: 15 / 1 / 19 / 7;
+  }
+
+  .img-3 {
+    grid-area: 2 / 7 / 10 / 13;
+  }
+
+  .img-6 {
+    grid-area: 10 / 7 / 13 / 13;
+  }
+
+  .img-7 {
+    grid-area: 13 / 7 / 17 / 13;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  form .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  form .button {
+    width: 40%;
+  }
+  .footer {
+    background-image: linear-gradient(#0009, #0009),
+      url(./images/textured-metal-background.jpg);
+    background-repeat: repeat-y;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer .footer-about {
+    width: 50%;
+    order: 1;
+  }
+  .footer .footer-contact {
+    order: 2;
+    width: 45%;
+  }
+  .footer-subscription {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .footer-subscription .sunscription-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .footer-subscription .sunscription-group input {
+    width: 75%;
+  }
+  .footer-subscription .sunscription-group button {
+    width: 20%;
+    justify-self: center;
+  }
+}
+
+/* end of medium md */
+
+/* Large lg */
+@media screen and (1024px <= width < 1280px) {
+}
+/* end of large lg */
+
+/* Extra large xl */
+@media screen and (1280px <= width < 1536px) {
+}
+/* end of extra large xl */
+
+/* Extra extra large xxl */
+@media screen and (1536px <= width) {
+}
+/* end of extra extra large xxl */
+
+/* end of media query */
